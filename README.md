@@ -63,3 +63,31 @@ $databases['d6source']['default'] = array(
 );
 ````
 
+TESTING
+=======
+
+Installing dependencies
+-----------------------
+
+````bash
+$ cd dgu_d7/tests
+$ curl http://getcomposer.org/installer | php
+$ php composer.phar install
+````
+
+Running Selenium
+----------------
+
+Download the Selenium Server jar file from [Selenium HQ](http://docs.seleniumhq.org/download/).
+
+````bash
+$ java -jar selenium-server-standalone-x.y.z.jar
+````
+
+Running the tests
+-----------------
+
+````bash
+$ cd dgu_d7/tests
+$ ./bin/behat -p linux_puppet
+````

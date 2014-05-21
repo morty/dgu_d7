@@ -81,3 +81,10 @@ pawel:
       drush:
         alias: 'pawel.d7.dev'
 
+linux_puppet:
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url: 'http://localhost:8000'
+    Drupal\DrupalExtension\Extension:
+      drush:
+        alias: 'linux.puppet'
